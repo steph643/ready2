@@ -1,0 +1,36 @@
+<body>
+
+  <h2>steph643:ready2 - test app</h2>
+  <p><i>
+    Usage:<br>
+    1. Open the browser console<br>
+    2. Click the Login/Failed Login/Logout buttons and see what happens<br>
+    3. Click the "Activate" button then redo step 2
+  </i></p>
+
+  <div style="margin-top:30px">
+    <p>
+      User "paul":
+      &nbsp;
+      {{#if currentUser}}
+        <button id="logout">Logout</button>
+      {{else}}
+        <button id="login">Login</button>
+        &nbsp;
+        <button id="failedLogin">Failed Login</button>
+      {{/if}}
+    </p>
+    <p>
+      Ready2:
+      &nbsp;
+      <button id="activateDeactivate">
+        {{#if isActivated}}Deactivate{{else}}Activate{{/if}}
+      </button>
+    </p>
+  </div>
+
+  <div style="margin-top:30px">
+    <b>Published Items:</b> {{#each items}}{{name}} {{/each}}
+  </div>
+
+</body>
