@@ -19,7 +19,7 @@ When user logs in or out, [all subscriptions are rerun](http://docs.meteor.com/#
 Eventhough this might imply a large quantity of data to be uploaded to - or removed from - the client, 
 the ready() method doesn't fire anymore. This might be a problem in some cases.
 
-**This package changes the ready() method behavior to make it fire also when user logs in or out**.
+**This package changes the ready() method behavior, to make it fire also when user logs in or out**.
 
 ## Why would I need this?
 
@@ -53,7 +53,7 @@ This package has several limitations:
 true).
 * The ready() method will return false reactively when user logs out **even if logout fails** (then immediately return 
 true).
-* The ready() method will return false reactively when user logs in/out **even if no data has been changed** (then immediately return true).
+* The ready() method will return false reactively when user logs in/out **even if no data has changed** (then immediately return true).
 
 ## License
 
