@@ -52,6 +52,10 @@ This package has several limitations.
 * The ready() method will return false reactively when user logs in *even if login fails*.
 * The ready() method will return false reactively when user logs out *even if logout fails*.
 * The ready() method will return false reactively when user logs in/out *even if no data has changed*.
+* Ready2 will make your onReady callbacks to be called whenever data is ready after user logs in/out. This 
+might sound good, but is actually useless because there is no onNotReadyAnymore callback to inform you that
+data were previously not ready. So my advice is to avoid setting onReady callbacks when using Ready2. If you 
+do anyway, a warning will be displayed in the console.
 
 ## License
 
