@@ -48,12 +48,10 @@ Cancel Ready2 behavior on the subscription whose handle is passed as a parameter
 
 ## Why this is not the ideal fix
 
-This package has several limitations:
-* The ready() method will return false reactively when user logs in **even if login fails** (then immediately return 
-true).
-* The ready() method will return false reactively when user logs out **even if logout fails** (then immediately return 
-true).
-* The ready() method will return false reactively when user logs in/out **even if no data has changed** (then immediately return true).
+This package has several limitations.
+* The ready() method will return false reactively when user logs in *even if login fails*.
+* The ready() method will return false reactively when user logs out *even if logout fails*.
+* The ready() method will return false reactively when user logs in/out *even if no data has changed*.
 
 ## License
 
