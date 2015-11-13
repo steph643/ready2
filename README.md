@@ -38,7 +38,7 @@ The API is **client-only**.
 
 Activate Ready2 behavior on the subscription whose handle is passed as a parameter. 
 
-After Ready2.activate() has been caleed, the ready() method:
+After Ready2.activate() has been called, the ready() method:
 * will return false reactively when the subscription is rerun (see important limitations below), and
 * will return true reactively after the subscription has rerun and data is ready.
 
